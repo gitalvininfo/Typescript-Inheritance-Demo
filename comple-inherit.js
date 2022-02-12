@@ -35,4 +35,15 @@ var Dog = /** @class */ (function (_super) {
     return Dog;
 }(Animal));
 var d = new Dog("Doggy");
-d.move();
+// d.move();
+var Employee = /** @class */ (function () {
+    function Employee(theName) {
+        this.name = theName;
+    }
+    Employee.prototype.getName = function () {
+        return this.name;
+    };
+    return Employee;
+}());
+var employee = new Employee("Bob");
+console.log(employee.getName());

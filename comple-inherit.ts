@@ -11,7 +11,7 @@ class Animal {
 }
 
 
-class Dog extends Animal{
+class Dog extends Animal {
     constructor(name: string) {
         super(name);
     }
@@ -24,4 +24,20 @@ class Dog extends Animal{
 
 let d = new Dog("Doggy");
 
-d.move();
+// d.move();
+
+
+class Employee {
+    private name: string;
+    constructor(theName: string) {
+        this.name = theName;
+    }
+
+    getName() {
+        return this.name;
+    }
+}
+
+let employee = new Employee("Bob");
+
+console.log(employee.getName())
